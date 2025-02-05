@@ -1,0 +1,287 @@
+.section-title {
+  max-width: 55rem;
+}
+
+.card-3-rows {
+  max-width: 25rem;
+  padding: 2rem;
+}
+
+.card-3-rows > img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.column-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-list-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.video-content {
+  width: 90%;
+}
+
+.video-content > video {
+  width: 100%;
+  height: fit-content;
+  border-radius: 3.5rem;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.3);
+}
+
+.section-img {
+  max-width: 70rem;
+  width: 100%;
+}
+
+.section-img > img {
+  width: 100%;
+  height: fit-content;
+}
+
+#features .column-list {
+  max-width: 86rem;
+}
+
+header {
+  background-image: url('../assets/img/best-product.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 10rem;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 3rem;
+}
+
+nav li {
+  list-style: none;
+  text-align: center;
+}
+
+nav .logo {
+  width: 30rem;
+}
+
+nav > div > a > img {
+  max-width: 2.5rem;
+  width: 100%;
+  max-height: 3rem;
+  filter: brightness(100) saturate(0);
+}
+
+.header-title {
+  max-width: 52rem;
+  height: 100%;
+}
+
+#organize {
+  padding: 8rem 0;
+  margin: 8rem 0;
+  background-color: var(--lightgray);
+}
+
+#pricing {
+  padding: 8rem 0;
+  margin: 8rem 0;
+  background-color: var(--purple);
+}
+
+#pricing .column-list {
+  max-width: 100rem;
+}
+
+.pricing {
+  background-color: var(--white);
+  align-items: center;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing.highlight {
+  background-color: var(--blue);
+  padding: 8rem 4rem;
+  color: var(--white);
+}
+
+.pricing-title {
+  max-width: 18rem;
+}
+
+.pricing-value {
+  width: max-content;
+  column-gap: 2rem;
+}
+
+.pricing-list ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.pricing-list li {
+  list-style: none;
+  text-align: center;
+}
+
+.testimonials-profile {
+  gap: 0.8rem;
+}
+
+.testimonials-btn {
+  max-width: 28rem;
+}
+
+#contact {
+  margin: 8rem auto;
+}
+
+#contact > .column-list {
+  column-gap: 3rem;
+}
+
+#contact .contact-map {
+  img {
+    width: 100%;
+  }
+}
+
+.contact-us {
+  height: fit-content;
+  max-width: 48rem;
+  width: 90%;
+  padding: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  border: solid 1px lightgray;
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  row-gap: 3.5rem;
+}
+
+.contact-btn {
+  width: 25%;
+  min-width: 6rem;
+  font-size: 1.5rem;
+}
+
+.contact-icons div {
+  /* I tried */
+  max-width: 5rem;
+  width: 30%;
+  height: fit-content;
+  padding: 0;
+  column-gap: 0.5rem;
+}
+
+.contact-icons-map-footer {
+  gap: 0rem;
+}
+
+.text-message {
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.contact-location {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-location > div.column-list {
+  width: 100%;
+}
+
+.contact-location > figure.column-list {
+  column-gap: 3rem;
+}
+
+.contact-location > .column-list > .card-3-rows {
+  width: max-content;
+  max-width: 35rem;
+}
+
+.contact-location > .column-list > .card-3-rows > h5 {
+  font-size: 1.5rem;
+}
+
+.contact-location > .column-list > .card-3-rows > img {
+  object-fit: contain;
+  object-position: center;
+}
+
+footer {
+  background-color: var(--purple);
+  padding: 10rem 0;
+}
+
+.footer-container h3 {
+  font-size: 1.5rem;
+}
+
+.footer-container-left.column-list {
+  width: auto;
+  height: auto;
+  max-width: 50rem;
+  max-height: 26rem;
+  column-gap: 10rem;
+}
+
+.footer-container-left h3 {
+  font-size: 1.6rem;
+}
+
+.footer-container-left ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.footer-container-left ul li {
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: left;
+  width: max-content;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+}
+
+.footer-contacts > div {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+.footer-contacts > div > a > img {
+  max-width: 2.5rem;
+  width: 100%;
+  max-height: 3rem;
+  filter: brightness(100) saturate(0);
+}
+
+.footer-contacts > div > img {
+  max-width: 2.5rem;
+  width: 100%;
+  max-height: 3rem;
+  filter: brightness(100) saturate(0);
+}
+
+.footer-contacts > div > span {
+  min-width: fit-content;
+  font-size: 1.5rem;
+}

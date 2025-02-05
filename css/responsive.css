@@ -1,0 +1,159 @@
+@media (max-width: 1190px) {
+  #contact > .column-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+
+  #contact form.contact-us {
+    max-width: 80rem;
+  }
+}
+
+@media (max-width: 768px) {
+  menu {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  #mobile-menu > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 2.2rem;
+    align-items: center;
+  }
+
+  #mobile-menu img {
+    width: 20rem;
+  }
+
+  .menu-hamburger {
+    background-color: unset !important;
+    border: none;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    align-items: flex-end;
+    position: relative;
+    width: 5rem;
+  }
+
+  .menu-hamburger > div {
+    background-color: white;
+    height: 0.6rem;
+    width: 4rem;
+    border-radius: 1rem;
+  }
+
+  .menu-hamburger > div:first-of-type {
+    width: 5rem;
+  }
+
+  .menu-hamburger > div:last-of-type {
+    width: 3rem;
+  }
+
+  .menu-hamburger.close div {
+    width: 5rem;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.4s;
+  }
+
+  .menu-hamburger.close > div:first-of-type {
+    display: block;
+    transform: rotate(45deg);
+  }
+
+  .menu-hamburger.close > div:last-of-type {
+    display: block;
+    transform: rotate(-45deg);
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 259px;
+    transition: all ease 0.4s;
+  }
+
+  .topnav a {
+    color: white;
+    padding: 1.4rem 2.3rem;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav a:hover {
+    background-color: gray;
+  }
+
+  #pricing > .column-list {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+
+  #pricing .pricing {
+    width: 90%;
+  }
+
+  #contact .contact-map {
+    max-width: 90%;
+  }
+
+  footer > div {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  footer > div > div.footer-container-left {
+    flex-direction: column;
+    max-height: unset !important;
+    row-gap: 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  footer > div > div.footer-container-left ul {
+    align-items: center;
+  }
+
+  footer .footer-contacts {
+    align-items: center;
+  }
+
+  #contact .contact-location .column-list {
+    flex-direction: column;
+    row-gap: 0.8rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 6px;
+  }
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox-Excercise</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <header class="container-fluid text-color-white flex flex-direction-column">
+      <menu class="content-center pt-20">
+        <nav class="column-list container align-items-center">
+          <div class="column-list align-items-center column-gap-50">
+            <ul class="as-p">
+              <a href="#features"><li>Home</li></a>
+              <a href="#organize"><li>Product</li></a>
+              <a href="#testimonials"><li>Testimonials</li></a>
+              <a href="#pricing"><li>Pricing</li></a>
+              <a href="#contact"><li>Contact</li></a>
+              <a href="#footer"><li>About</li></a>
+            </ul>
+            <figure>
+              <img
+                class="logo"
+                src="assets/img/figma-land-logo.png"
+                alt="The figma logotype within a button"
+              />
+            </figure>
+          </div>
+          <div class="flex column-gap-20">
+            <a href="https://x.com/?mx=2"
+              ><img
+                src="assets/img/twitter.png"
+                alt="Twitter's icon. A bird looking to the northeast part of the screen"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="assets/img/facebook.png"
+                alt="Facebook's icon. A sanserif small f inside a square"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/pedro-v%C3%ADctor-melo-de-carvalho-braga-4195ba183/"
+              ><img
+                src="assets/img/linkedin.png"
+                alt="Linkedin's icon. A sanserif word, in, into a square"
+            /></a>
+          </div>
+        </nav>
+      </menu>
+      <menu id="mobile-menu" class="content-center">
+        <div>
+          <a href="#"
+            ><img
+              class="logo"
+              src="assets/img/figma-land-logo.png"
+              alt="The figma logotype within a button"
+          /></a>
+          <button
+            type="button"
+            id="mobile-menu-hamburger"
+            class="no-default-style menu-hamburger"
+            onclick="toggleMobileMenu()"
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </button>
+        </div>
+        <div id="items-topnav" class="topnav hide">
+          <a href="#features">Home</a>
+          <a href="#organize">Product</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+          <a href="#footer">About</a>
+        </div>
+      </menu>
+      <div
+        class="header-title content-center text-center flex flex-direction-column row-gap-50 justify-content-center align-items-center"
+      >
+        <h1 class="as-h2">The best products start with Figma</h1>
+        <h4 class="standard as-h5 mt-15">
+          Most calendars are designed for teams. Slate is designed for
+          freelancers
+        </h4>
+        <button class="standard as-p" onclick="scrollToSection()">
+          Know more
+        </button>
+      </div>
+    </header>
+    <main>
+      <section
+        id="features"
+        class="flex flex-direction-column container content-center"
+      >
+        <div class="section-title text-center content-center">
+          <h2 class="standard">Features</h2>
+          <h4 class="standard as-h5 mt-15">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers
+          </h4>
+        </div>
+        <div class="content-center">
+          <div class="column-list content-center mt-50 mb-50">
+            <div class="card-3-rows text-center">
+              <img
+                src="assets/img/open-type.png"
+                alt="an image representing a merge of a circle and an square"
+              />
+              <h3 class="as-p bold mt-15 mb-15">
+                OpenType features Variable fonts
+              </h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="card-3-rows text-center">
+              <img
+                src="assets/img/design-with-real-data.png"
+                alt="an image representing a pencil drawer"
+              />
+              <h3 class="as-p bold mt-15 mb-15">Design with real data</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+            <div class="card-3-rows text-center">
+              <img
+                src="assets/img/fastest-way-to-take-action.png"
+                alt="an image representing a pencil brush"
+              />
+              <h3 class="as-p bold mt-15 mb-15">Fastest way to take action</h3>
+              <p>
+                Slate helps you see how many more days you need to work to reach
+                your financial goal.
+              </p>
+            </div>
+          </div>
+          <div class="video-content content-center">
+            <video width="1177" height="658" controls>
+              <source src="assets/video/214940_small.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+      <section id="organize" class="container-fluid">
+        <div
+          class="column-list-2 container content-center flex align-items-center"
+        >
+          <div class="section-title text-left">
+            <h2 class="standard">Fastest way to organize</h2>
+            <h4 class="standard as-h5 mt-30 mb-50">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers
+            </h4>
+            <a
+              href="https://trello.com/templates/engineering/kanban-quadro-modelo-5FldI0TK"
+              ><button class="mt-50">Try for Free</button></a
+            >
+          </div>
+          <figure class="section-img">
+            <img src="assets/img/dashboard.png" />
+          </figure>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="flex flex-direction-column container content-center"
+      >
+        <div
+          class="section-title content-center text-center flex justify-content-center flex-direction-column"
+        >
+          <div>
+            <h2 class="standard text-center mb-50">Testimonials</h2>
+          </div>
+          <div class="testimonials">
+            <img
+              class="mb-50"
+              src="assets/img/testimonials-ibm.png"
+              alt="IBM's logo"
+            />
+            <h4 class="standard as-h5 mb-50">
+              Most calendars are designed for teams. Slate is designed for
+              freelancers who want a simple way to plan their schedule.
+            </h4>
+          </div>
+          <div
+            class="testimonials-profile justify-content-center flex align-items-center"
+          >
+            <img
+              src="assets/img/organize-across.png"
+              alt="profile foto from ui designer that has made a testimonial"
+            />
+            <div>
+              <h5 class="mb-10 standard as-h6 as-p">Organize across</h5>
+              <p class="standard as-p flex align-items-left">UI Designer</p>
+            </div>
+          </div>
+          <div class="testimonials-btn content-center">
+            <button class="mt-50 mb-50">More Testimonials</button>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="container-fluid">
+        <div class="content-center text-center section-title mb-50">
+          <h2 class="standard as-h3 text-color-white">Pricing</h2>
+          <h4 class="standard as-h5 text-color-white mt-30 mb-10">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </h4>
+        </div>
+        <div class="column-list align-items-center content-center">
+          <div class="pricing border-radius-08">
+            <div class="pricing-title content-center text-center mb-20">
+              <h3 class="as-h6 bold mt-20 mb-10">FREE</h3>
+              <h5 class="standard as-h6 as-p">
+                Organize across all apps by hand
+              </h5>
+            </div>
+            <div class="pricing-value flex align-items-center mt-20">
+              <h1 class="as-h1 bold">0</h1>
+              <div>
+                <h3 class="as-h6 bold mb-05">$</h3>
+                <h5 class="standard as-p">Per Month</h5>
+              </div>
+            </div>
+            <div class="pricing-list mt-20">
+              <ul>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+              </ul>
+            </div>
+            <div class="mt-40">
+              <button class="pt-15 pb-15 standard as-p">Order Now</button>
+            </div>
+          </div>
+
+          <div class="pricing highlight border-radius-08">
+            <div class="pricing-title content-center text-center mb-20">
+              <h3 class="as-h6 bold mt-20 mb-10">STANDARD</h3>
+              <h5 class="standard as-h6 as-p">
+                Organize across all apps by hand
+              </h5>
+            </div>
+            <div class="pricing-value flex align-items-center mt-20">
+              <h1 class="as-h1 bold">50</h1>
+              <div>
+                <h3 class="as-h6 bold mb-05">$</h3>
+                <h5 class="standard as-p">Per Month</h5>
+              </div>
+            </div>
+            <div class="pricing-list mt-20">
+              <ul>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+              </ul>
+            </div>
+            <div class="mt-40">
+              <button
+                class="pt-15 pb-15 standard as-p bgcolor-white text-color-blue"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+
+          <div class="pricing border-radius-08">
+            <div class="pricing-title content-center text-center mb-20">
+              <h3 class="as-h6 bold mt-20 mb-10">BUSINESS</h3>
+              <h5 class="standard as-h6 as-p">
+                Organize across all apps by hand
+              </h5>
+            </div>
+            <div class="pricing-value flex align-items-center mt-20">
+              <h1 class="as-h1 bold">200</h1>
+              <div>
+                <h3 class="as-h6 bold mb-05">$</h3>
+                <h5 class="standard as-p">Per Month</h5>
+              </div>
+            </div>
+            <div class="pricing-list mt-20">
+              <ul>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+                <li>Princing Feature</li>
+              </ul>
+            </div>
+            <div class="mt-40">
+              <button class="pt-15 pb-15 standard as-p">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="container">
+        <div class="section-title content-center text-center mb-50">
+          <h2 class="standard as-h3">Contact Us</h2>
+          <h4 class="standard as-h5 mt-30 mb-10">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </h4>
+        </div>
+        <div class="column-list">
+          <form class="contact-us">
+            <h3 class="as-h6 mb-20">Contact Us</h3>
+            <input type="text" name="user-name" placeholder="Your Name" />
+            <input type="text" name="user-email" placeholder="Your Email" />
+            <textarea
+              class="mb-05"
+              name="user-text-message"
+              placeholder="Your Message"
+            ></textarea>
+            <button
+              type="submit"
+              class="contact-btn lighter as-p text-color-white mb-10"
+            >
+              Send
+            </button>
+          </form>
+          <div class="contact-location">
+            <div class="column-list mb-50">
+              <div class="card-3-rows text-center">
+                <img
+                  class="mb-15"
+                  src="assets/img/gps-icon.svg"
+                  alt="the name of the address location"
+                />
+                <h5 class="light">
+                  6386 Spring St undefined Anchorage, Georgia 12473 United
+                  States
+                </h5>
+              </div>
+              <div class="card-3-rows text-center">
+                <img
+                  class="mb-15"
+                  src="assets/img/smartphone-icon.svg"
+                  alt="the name of the address location"
+                />
+                <h5 class="light">(843) 555-0130</h5>
+              </div>
+              <div class="card-3-rows text-center">
+                <img
+                  class="mb-15"
+                  src="assets/img/email-icon.svg"
+                  alt="the name of the address location"
+                />
+                <h5 class="light">willie.jennings@example.com</h5>
+              </div>
+            </div>
+            <figure class="contact-map mt-10 mb-30">
+              <a
+                href="https://www.google.com/maps/@-3.7374608,-38.5179547,15z?entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D"
+                target="_blank"
+                ><img
+                  src="assets/img/map-screen.png"
+                  alt="a map with the companie's address loctaion"
+              /></a>
+            </figure>
+            <figure class="mt-20 column-list">
+              <a href="https://x.com/?mx=2"
+                ><img
+                  src="assets/img/twitter.png"
+                  alt="Twitter's icon. A bird looking to the northeast part of the screen"
+              /></a>
+              <a href="https://www.facebook.com/"
+                ><img
+                  src="assets/img/facebook.png"
+                  alt="Facebook's icon. A sanserif small f inside a square"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/pedro-v%C3%ADctor-melo-de-carvalho-braga-4195ba183/"
+                ><img
+                  src="assets/img/linkedin.png"
+                  alt="Linkedin's icon. A sanserif word, in, into a square"
+              /></a>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="container-fluid">
+      <div
+        class="container content-center text-color-white flex justify-content-center column-gap-200"
+      >
+        <div class="footer-container-left column-list">
+          <div>
+            <h3 class="mb-10">Pages</h3>
+            <div class="mt-20 lighter">
+              <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>Princing</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-10">Tomothy</h3>
+            <div class="mt-20 lighter">
+              <ul>
+                <li>Eleanor Edwards</li>
+                <li>Ted Robertson</li>
+                <li>Annete Russel</li>
+                <li>Jennie Mckinney</li>
+                <li>Gloria Richards</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h3 class="mb-10">Jane Black</h3>
+            <div class="mt-20 lighter">
+              <ul>
+                <li>HomePhilip Jones</li>
+                <li>Richard Grimmes</li>
+                <li>Collen Russel</li>
+                <li>Kurt Coen</li>
+                <li>Bruce Simmons</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-contacts">
+          <div>
+            <img src="assets/img/gps-icon.svg" alt="a figure of a gps icon" />
+            <span>7480 Mockingbird Hill</span>
+          </div>
+          <div>
+            <img
+              src="assets/img/smartphone-icon.svg"
+              alt="a figure of a smartphone icon"
+            />
+            <span>(239) 555-0108</span>
+          </div>
+          <div>
+            <a href="https://x.com/?mx=2"
+              ><img
+                src="assets/img/twitter.png"
+                alt="Twitter's icon. A bird looking to the northeast part of the screen"
+            /></a>
+            <a href="https://www.facebook.com/"
+              ><img
+                src="assets/img/facebook.png"
+                alt="Facebook's icon. A sanserif small f inside a square"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/pedro-v%C3%ADctor-melo-de-carvalho-braga-4195ba183/"
+              ><img
+                src="assets/img/linkedin.png"
+                alt="Linkedin's icon. A sanserif word, in, into a square"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
