@@ -2,4 +2,4 @@
 
 Check out my landpage project
 
-https://pedrovictormcb.github.io/exercicioFlexBox/
+<a href="https://pedrovictormcb.github.io/exercicioFlexBox/" target="_blank">landing page</a>
